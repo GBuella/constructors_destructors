@@ -1,0 +1,7 @@
+
+Looking at constructors/destructors of executable images
+
+```
+make
+LD_DEBUG=all LD_LIBRARY_PATH=. LD_PRELOAD=libdummy.so ./dummy_prog 2>&1 | grep "calling\|running"
+```
